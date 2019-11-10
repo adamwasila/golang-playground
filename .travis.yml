@@ -25,7 +25,7 @@ services:
 after_success:
 # docker login is required if you want to push docker images.
 # DOCKER_PASSWORD should be a secret in your .travis.yml configuration.
-- test -n "$TRAVIS_TAG" && docker login -u=myuser -p="$DOCKER_PASSWORD"
+#- test -n "$TRAVIS_TAG" && docker login -u=myuser -p="$DOCKER_PASSWORD"
 # snapcraft login is required if you want to push snapcraft packages to the
 # store.
 # You'll need to run `snapcraft export-login snap.login` and
